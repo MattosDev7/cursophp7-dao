@@ -25,12 +25,19 @@ Criando um novo usuaio
 $aluno = new Usuario("aluno", "senha0");
 $aluno->insert();
 echo $aluno;*/
-
+/*
+Alterando usuario
 $usuario = new Usuario();
 $usuario->loadById(8);
 $usuario->update("professor", "!@#$69");
 
+echo $usuario;*/
+
+$usuario = new Usuario();
+
+$usuario->loadById(9);
+
+$usuario->delete();
+
 echo $usuario;
-
-
 ?>
